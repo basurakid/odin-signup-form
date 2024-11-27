@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'alte_haas_grotesk';
+    src: url('webfontkit-alte-haas-grotesk/altehaasgroteskregular-webfont.woff2') format('woff2'),
+         url('webfontkit-alte-haas-grotesk/altehaasgroteskregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'alte_haas_grotesk';
+    src: url('webfontkit-alte-haas-grotesk/altehaasgroteskbold-webfont.woff2') format('woff2'),
+         url('webfontkit-alte-haas-grotesk/altehaasgroteskbold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: alte_haas_grotesk, sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    
+}
+
+.image {
+    background-image: url(images/bady-abbas-hxi_yRxODNc-unsplash.jpg);
+    background-size: cover;
+    width: 40%;
+}
+
+.logo-container {
+    background: rgba(0, 0, 0, 70%);
+    margin-top: 50px;
+    padding: 20px 25px;
+    color: white;
+    width: 85%;
+    position: relative;
+    -webkit-mask-image: url("https://symbolikon.com/wp-content/uploads/edd/2019/09/astrology-gemini-bold-400w.png");
+    mask-image: url("https://symbolikon.com/wp-content/uploads/edd/2019/09/astrology-gemini-bold-400w.png");
+}
+
+.logo-container h1 {
+    display: inline;
+}
+
+.logo {
+    height: 50px;
+    filter: invert(1);
+}
+
+.form-container {
+    background-color: azure;
+}
