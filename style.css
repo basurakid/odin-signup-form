@@ -67,6 +67,14 @@ main {
 .image p {
     position: absolute;
     bottom: 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 70%);
+    color: white;
+    font-size: 0.8em;
+}
+
+.image a {
+    color: white;
 }
 
 .form-container {
