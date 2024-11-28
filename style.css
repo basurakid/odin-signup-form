@@ -76,6 +76,11 @@ main {
     filter: invert(1);
 }
 
+.image p {
+    position: absolute;
+    bottom: 0;
+}
+
 .form-container {
     background-color: rgb(26, 26, 26);
     width: 60%;
@@ -155,7 +160,7 @@ form button {
 button:hover {
     background-color: white;
     color: black;
-    border-radius: 2px;
+    border-bottom: 2px solid white;
 }
 
 .button-link {
@@ -174,7 +179,7 @@ input:focus {
     box-shadow: 2px 2px 3px gray;
 }
 
-input:invalid {
+.password:invalid {
     outline: 2px solid lightcoral;
 }
 
