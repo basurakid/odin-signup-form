@@ -47,17 +47,28 @@ main {
     margin-top: 50px;
     padding: 20px 25px;
     color: white;
-    
+    max-width: 50%;
     position: relative;
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 1800px){
+    .logo-container{
+        max-width: 60%
+    }
+}
+
+@media (min-width: 2370px){
+    .logo-container{
+        max-width: 47%
+    }
 }
 
 .logo-container h1 {
     display: inline;
     margin-left: 25px;
     font-size: 3em;
-    
 }
 
 .logo {
@@ -77,6 +88,7 @@ main {
     max-width: 70%;
     line-height: 2em;
     margin: 10% 15% 0 15%;
+    font-weight: bold;
 }
 
 .author {
@@ -98,6 +110,7 @@ main {
     gap: 20px;
     padding: 30px 50px 50px 50px;
     font-size: 1.2em;
+    margin-top: 50px
 }
 
 label {
@@ -117,7 +130,7 @@ label {
     min-width: 70%;
     min-height: 20px;
     border: 1px solid gainsboro;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 .inputs h2 {
@@ -127,18 +140,34 @@ label {
 
 form button {
     appearance: none;
-    padding: 5px 10px;
+    padding: 10px 10px;
     font-size: 1em;
     border-radius: 5px;
     margin-bottom: 15px;
+    width: 35%;
+    font-weight: bold;
 }
 
 .button-link {
     margin: 30px auto; 
     max-width: 50%;
+    padding-left:10px;
 }
 
 a {
     text-decoration: none;
     color: grey
+}
+
+input:focus {
+    outline: 2px solid rgb(62, 88, 128);
+    box-shadow: 2px 2px 3px gray;
+}
+
+input:invalid {
+    outline: 2px solid lightcoral;
+}
+
+input:placeholder-shown {
+    outline: 0
 }
