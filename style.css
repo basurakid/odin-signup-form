@@ -179,7 +179,7 @@ input:focus {
     box-shadow: 2px 2px 3px gray;
 }
 
-.password:invalid {
+input:invalid {
     outline: 2px solid lightcoral;
 }
 
